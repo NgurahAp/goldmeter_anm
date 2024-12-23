@@ -8,7 +8,7 @@ const products = [
       "Model populer dengan resolusi 0,01g/cm yang ditingkatkan dari sebelumnya model MD-200S.",
     image: "/landing/md-300s.jpeg",
     alt: "Gold Meter & Precious Metal Tester",
-    link: `/products/Alfa%20Mirage%20Densimeter%20MD-300S`,
+    link: `/detailProduct/Alfa%20Mirage%20Densimeter%20MD-300S`,
     padding: "mt-[1.2rem]",
   },
   {
@@ -18,7 +18,7 @@ const products = [
       "Fungsi baru pengukuran kepadatan bubuk ditambah dengan resolusi 0,001g/cm dan nilai referensi 0,0001g/cm",
     image: "/landing/mds-300.jpeg",
     alt: "Gold Meter & Precious Metal Tester",
-    link: `/products/Elektronik%20Densimeter%20MDS-300`,
+    link: `/detailProduct/Elektronik%20Densimeter%20MDS-300`,
     padding: null,
   },
   {
@@ -27,7 +27,7 @@ const products = [
     description: "MDS-3000 dapat mengukur kapasitas maksimum hingga 3kg.",
     image: "/landing/mds-3000.jpeg",
     alt: "Gold Meter & Precious Metal Tester",
-    link: `/products/Elektronik%20Densimeter%20MDS-3000`,
+    link: `/detailProduct/Elektronik%20Densimeter%20MDS-3000`,
     padding: "mt-[1rem]",
   },
 ];

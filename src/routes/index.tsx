@@ -1,6 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import MainLayout from "../layouts/MainLayout";
 import Landing from "../pages/LandingPage";
+import { ProductDetail } from "../pages/detailProduct";
 
 const AppRouter: React.FC = () => {
   return (
@@ -8,6 +9,7 @@ const AppRouter: React.FC = () => {
       <MainLayout>
         <Routes>
           <Route path="/" element={<Landing />} />
+          <Route path="/detailProduct/:productName" element={<ProductDetail />} />
         </Routes>
       </MainLayout>
     </BrowserRouter>
