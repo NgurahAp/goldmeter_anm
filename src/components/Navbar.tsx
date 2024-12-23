@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import {  Menu, X } from "lucide-react";
-import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -41,25 +40,25 @@ const Navbar = () => {
           <div className="hidden md:block">
             <div className="flex space-x-6">
               {menuItems.map((item) => (
-                <Link
+                <a
                   key={item.label}
-                  to={item.to}
+                  href={item.to}
                   className="text-gray-900 hover:text-red-500 px-3 py-1 text-base font-medium border-b border-transparent hover:border-red-500 transition-all duration-300"
                 >
                   {item.label}
-                </Link>
+                </a>
               ))}
             </div>
           </div>
 
           {/* CTA Button */}
           <div className="hidden md:block">
-            <Link
-              to="#"
+            <a
+              href="#"
               className="text-red-500 border-2 border-red-500 px-6 py-3 rounded-md text-base font-semibold hover:bg-red-500 hover:text-white transition-all duration-300"
             >
               Minta Penawaran
-            </Link>
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -88,23 +87,23 @@ const Navbar = () => {
       >
         <div className="px-4 pt-2 pb-4 space-y-3">
           {menuItems.map((item) => (
-            <Link
+            <a
               key={item.label}
-              to={item.to}
+              href={item.to}
               onClick={closeMenu}
               className="block text-gray-900 hover:text-red-500 px-3 py-3 text-base font-medium border-b border-gray-200 hover:bg-gray-50 transition-all duration-300"
             >
               {item.label}
-            </Link>
+            </a>
           ))}
           <div className="pt-2 pb-1">
-            <Link
-              to="#"
+            <a
+              href="#"
               onClick={closeMenu}
               className="block w-full text-center text-red-500 border-2 border-red-500 px-6 py-3 rounded-md text-base font-semibold hover:bg-red-500 hover:text-white transition-all duration-300"
             >
               Minta Penawaran
-            </Link>
+            </a>
           </div>
         </div>
       </div>
