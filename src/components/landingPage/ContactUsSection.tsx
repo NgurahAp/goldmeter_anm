@@ -21,7 +21,12 @@ const ContactUs = () => {
 
           {/* Buttons */}
           <div className="flex flex-col space-y-4 pt-8">
-            <button className="flex items-center w-full justify-center border border-red-500 rounded-md py-3 text-red-600 space-x-4 hover:text-white transition duration-300 hover:bg-red-500">
+            <a
+              href="https://wa.me/6281617408900"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center w-full justify-center border border-red-500 rounded-md py-3 text-red-600 space-x-4 hover:text-white transition duration-300 hover:bg-red-500"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-6 w-6"
@@ -37,9 +42,12 @@ const ContactUs = () => {
                 />
               </svg>
               <span className="font-medium">0816-1740-8900</span>
-            </button>
+            </a>
 
-            <button className="flex items-center w-full justify-center border border-red-500 rounded-md py-3 text-red-600 space-x-4 hover:text-white transition duration-300 hover:bg-red-500">
+            <a
+              href="mailto:sales@anm.co.id"
+              className="flex items-center w-full justify-center border border-red-500 rounded-md py-3 text-red-600 space-x-4 hover:text-white transition duration-300 hover:bg-red-500"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-6 w-6"
@@ -55,7 +63,7 @@ const ContactUs = () => {
                 />
               </svg>
               <span className="font-medium">sales@anm.co.id</span>
-            </button>
+            </a>
           </div>
         </div>
 
