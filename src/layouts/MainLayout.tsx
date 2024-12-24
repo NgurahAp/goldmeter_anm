@@ -19,7 +19,7 @@ const MainLayout: React.FC<MainLayoutProps> = ({ children }) => {
   }, [location.pathname]);
 
   return (
-    <div className="layout">
+    <div className="layout overflow-hidden">
       <Navbar />
       <main>{children}</main>
       <Footer />
