@@ -136,11 +136,11 @@ const Footer = () => {
       <div className="w-full h-[1px] mt-4 bg-slate-300 hover:bg-green-500 transition-all duration-300"></div>
       <div className="text-slate-400 md:text-center p-4">
         <p className="text-xs">
-          &copy; Copyright 2024
+          &copy; Copyright 2024 {" "}
           <a href="https://anm.co.id" className="text-blue-500 hover:underline">
             anm.co.id
           </a>
-          . All Rights Reserved Powered by
+          . All Rights Reserved Powered by {" "}
           <a
             href="https://resolusiweb.com"
             className="font-bold text-blue-600 hover:underline"
