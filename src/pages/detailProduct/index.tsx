@@ -41,14 +41,15 @@ export const ProductDetail = () => {
 
   return (
     <section>
-      <div className="min-h-screen px-10 pt-32 pb-10">
-        <div className="flex">
-          <div className="w-1/2 pl-20">
+      <div className="min-h-screen px-5 md:px-10 pt-14 md:pt-32 pb-10">
+        <div className="flex flex-col-reverse md:flex-row">
+          <div className="w-full md:w-1/2 md:pl-20">
             <img
               src={product.image}
               alt={product.name}
               width={500}
               height={500}
+              className="hidden md:block"
             />
             <h3 className="pt-8 pb-2 font-urbanist text-xl font-extrabold">
               Spesifikasi
@@ -63,8 +64,15 @@ export const ProductDetail = () => {
               </div>
             ))}
           </div>
-          <div className="w-1/2 pt-10 px-5">
-            <h2 className="font-urbanist font-extrabold text-5xl pr-10 text-gray-800">
+          <div className="w-full md:w-1/2 pt-10 md:px-5">
+            <img
+              src={product.image}
+              alt={product.name}
+              width={500}
+              height={500}
+              className="block md:hidden pb-5"
+            />
+            <h2 className="font-urbanist font-extrabold text-3xl md:text-5xl pr-10 text-gray-800">
               {product.name}
             </h2>
             <h3 className="pt-8 pb-2 font-urbanist text-xl font-extrabold">
