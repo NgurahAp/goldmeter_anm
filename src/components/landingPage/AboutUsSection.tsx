@@ -1,7 +1,7 @@
 const AboutUs = () => {
   return (
     <section className="min-h-screen flex items-center">
-      <div className="flex flex-col md:flex-row gap-x-10 px-3 md:px-24 ">
+      <div className="flex flex-col md:flex-row gap-x-10 px-5 md:px-24 ">
         <div className="w-full flex justify-center md:w-1/2">
           <img
             className="w-11/12"
