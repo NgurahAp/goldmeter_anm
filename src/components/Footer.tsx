@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
-    <footer className="h-[65vh] bg-[#333333] py-16 px-20">
-      <div className="flex">
+    <footer className="min-h-[65vh] bg-[#333333] py-10 md:py-16 px-5 md:px-20">
+      <div className="flex flex-col md:flex-row">
         <div>
           <img
             src="/landing/footer_logo.jpg"
@@ -49,7 +49,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="pl-32">
+        <div className="md:pl-32 pt-8 md:pt-0">
           <h1 className="font-urbanist font-medium text-xl text-white">
             Alamat Kantor
           </h1>
@@ -68,7 +68,7 @@ const Footer = () => {
           </h1>
           <p className="text-slate-300 font-light pt-4">http://www.anm.co.id</p>
         </div>
-        <div className="pl-24">
+        <div className="md:pl-24 pt-8">
           <h1 className="font-urbanist font-medium text-2xl text-white">
             Media Sosial
           </h1>
@@ -134,7 +134,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="w-full h-[1px] mt-5 bg-slate-300 hover:bg-green-500 transition-all duration-300"></div>
-      <div className=" text-slate-400 text-center p-5">
+      <div className=" text-slate-400 md:text-center p-5">
         <p className="text-sm">
           &copy; Copyright 2024
           <a href="https://anm.co.id" className="text-blue-500 hover:underline">
