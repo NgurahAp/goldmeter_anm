@@ -1,17 +1,17 @@
 const HowToOrder = () => {
   return (
-    <section id="howToOrder" className="min-h-screen my-10 mx-20">
+    <section id="howToOrder" className="min-h-screen my-10 mx-5 md:mx-20">
       <div className="flex flex-col text-center font-urbanist">
         <p className="text-lg font-extrabold text-green-800 pt-14 pb-5">
           Cara Pemesanan
         </p>
-        <h2 className="text-5xl font-extrabold text-gray-800 pb-14">
+        <h2 className="text-3xl md:text-5xl font-extrabold text-gray-800 pb-10 md:pb-14">
           Langkah Mudah untuk Pemesanan
         </h2>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-3  font-urbanist">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-y-8 font-urbanist">
         <div className="bg-white rounded-lg   overflow-hidden">
-          <h2 className="text-center text-2xl font-bold text-gray-700  pb-14">
+          <h2 className="text-center text-2xl font-bold text-gray-700 pb-5 md:pb-14">
             Step 1
           </h2>
           <div className="flex justify-center">
@@ -34,7 +34,7 @@ const HowToOrder = () => {
           </div>
         </div>
         <div className="bg-white rounded-lg   overflow-hidden">
-          <h2 className="text-center text-2xl font-bold text-gray-700  pb-14">
+          <h2 className="text-center text-2xl font-bold text-gray-700 pb-5 md:pb-14">
             Step 2
           </h2>
           <div className="flex justify-center">
@@ -56,7 +56,7 @@ const HowToOrder = () => {
           </div>
         </div>
         <div className="bg-white rounded-lg   overflow-hidden">
-          <h2 className="text-center text-2xl font-bold text-gray-700  pb-14">
+          <h2 className="text-center text-2xl font-bold text-gray-700 pb-5 md:pb-14">
             Step 3
           </h2>
           <div className="flex justify-center">
@@ -79,7 +79,7 @@ const HowToOrder = () => {
           </div>
         </div>
       </div>
-    </section>
+    </section>  
   );
 };
 

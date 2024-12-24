@@ -83,7 +83,7 @@ const Navbar = () => {
           isOpen
             ? "opacity-100 translate-y-0"
             : "opacity-0 -translate-y-full pointer-events-none"
-        } absolute top-24 left-0 right-0 bg-white shadow-lg`}
+        } absolute top-20 left-0 right-0 bg-white shadow-lg`}
       >
         <div className="px-4 pt-2 pb-4 space-y-3">
           {menuItems.map((item) => (
