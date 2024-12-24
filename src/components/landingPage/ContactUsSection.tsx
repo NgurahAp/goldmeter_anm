@@ -1,9 +1,12 @@
 const ContactUs = () => {
   return (
-    <section id="contactUs" className="min-h-[80vh] bg-gray-100 py-6 px-36">
-      <div className="flex w-full h-full gap-x-8">
+    <section
+      id="contactUs"
+      className="min-h-[80vh] bg-gray-100 py-6 px-5 md:px-36"
+    >
+      <div className="flex flex-col md:flex-row w-full h-full gap-8">
         {/* Left Section */}
-        <div className="w-1/3 bg-white p-5 rounded-lg">
+        <div className="w-full md:w-1/3 bg-white p-5 rounded-lg">
           <h2 className="font-urbanist text-green-700 font-bold text-lg">
             Hubungi Kami
           </h2>
@@ -57,8 +60,8 @@ const ContactUs = () => {
         </div>
 
         {/* Right Section */}
-        <div className="w-2/3 bg-white rounded-lg p-10">
-          <h2 className="font-urbanist text-gray-800 font-extrabold text-5xl">
+        <div className="w-full md:w-2/3 bg-white rounded-lg p-5 md:p-10">
+          <h2 className="font-urbanist text-gray-800 font-extrabold text-3xl md:text-5xl">
             Dapatkan Penawaran Spesial Sekarang!
           </h2>
           <form className="space-y-4 pt-7">

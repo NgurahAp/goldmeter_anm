@@ -1,7 +1,7 @@
 const WhyUs = () => {
   return (
     <section id="whyUs" className="min-h-screen flex items-center my-10">
-      <div className="flex flex-col-reverse md:flex-row gap-x-10 px-5 md:px-24 ">
+      <div className="flex flex-col-reverse md:flex-row gap-x-6 px-5 md:px-24 ">
         <div className="w-full md:w-1/2 font-urbanist">
           <p className="text-green-700 md:text-base text-left font-extrabold pb-3 md:pb-6 text-xl pt-10 md:pt-0">
             Mengapa Memilih Kami
@@ -110,8 +110,10 @@ const WhyUs = () => {
             </div>
           </div>
         </div>
-        <div className="w-full flex justify-center md:w-1/2">
-          <img className="w-11/12" src="/landing/why_us.jpg" alt="Logo" />
+        <div className="w-full flex justify-center items-center md:w-1/2">
+          <div className="w-11/12 md:w-full relative">
+            <img className="object-contain w-full" src="/landing/why_us.jpg" alt="Logo" />
+          </div>
         </div>
       </div>
     </section>

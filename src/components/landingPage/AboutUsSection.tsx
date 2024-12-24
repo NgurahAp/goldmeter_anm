@@ -1,15 +1,15 @@
 const AboutUs = () => {
   return (
     <section className="min-h-screen flex items-center">
-      <div className="flex flex-col md:flex-row gap-x-10 px-5 md:px-24 ">
-        <div className="w-full flex justify-center md:w-1/2">
-          <img
-            className="w-11/12"
-            src="/landing/about_us.jpg"
-            alt="Penyedia Utama Solusi Alat Laboratorium dan Alat Kesehatan"
-            height={547}
-            width={523}
-          />
+      <div className="flex flex-col md:flex-row gap-x-10 px-5 md:px-24">
+        <div className="w-full md:w-1/2 flex items-center justify-center">
+          <div className="w-full relative">
+            <img
+              className="w-full object-contain"
+              src="/landing/about_us.jpg"
+              alt="Penyedia Utama Solusi Alat Laboratorium dan Alat Kesehatan"
+            />
+          </div>
         </div>
         <div className="w-full md:w-1/2 font-urbanist">
           <p className="text-green-700 text-center md:text-base md:text-left font-extrabold pb-3 md:pb-6 text-xl pt-10 md:pt-0">
@@ -18,7 +18,7 @@ const AboutUs = () => {
           <h2 className="font-extrabold text-center md:text-left text-3xl md:text-5xl text-gray-800 pb-3 md:pb-6">
             Penyedia Utama Solusi Alat Laboratorium dan Alat Kesehatan
           </h2>
-          <h2 className="font-poppins text-center md:text-left text-gray-500 text-sm md:text-xl ">
+          <h2 className="font-poppins text-center md:text-left text-gray-500 text-sm md:text-xl">
             PT. Anugrah Niaga Mandiri adalah perusahaan yang bergerak di bidang
             jual beli, distribusi, dan keagenan alat-alat laboratorium. Kami
             berkomitmen menyediakan produk-produk berkualitas tinggi yang
