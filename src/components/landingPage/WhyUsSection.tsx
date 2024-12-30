@@ -7,7 +7,7 @@ const WhyUs = () => {
             Mengapa Memilih Kami
           </p>
           <h2 className="font-extrabold text-left text-2xl md:text-5xl text-gray-800 pb-5 md:pb-6">
-            Penyedia Alat Laboratorium dan Kesehatan Terbaik
+            Penyedia Gold Meter dan Densimeter Elektronik Terbaik
           </h2>
           <div className="flex space-x-2 md:space-x-4">
             <div className="flex flex-col items-center pt-8 md:pt-9">

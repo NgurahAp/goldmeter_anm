@@ -11,11 +11,11 @@ const HeroSection = () => {
         <h1 className="py-6 text-5xl md:text-5xl font-extrabold text-gray-900">
           Solusi Lengkap untuk Kebutuhan <br />
           <span className="text-3xl md:text-6xl font-extrabold text-green-700">
-            Peralatan Laboratorium
+            Timbangan Laboratorium
           </span>
         </h1>
         <p className="font-poppins text-base md:text-lg text-gray-700 italic pb-10">
-          Distributor dan Agen Terpercaya Alat Laboratorium Berkualitas Tinggi
+          Distributor dan Agen Terpercaya Timbangan Laboratorium Berkualitas Tinggi
           di Indonesia
         </p>
         <a

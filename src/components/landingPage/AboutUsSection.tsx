@@ -16,11 +16,11 @@ const AboutUs = () => {
             Tentang Kami
           </p>
           <h2 className="font-extrabold text-center md:text-left text-3xl md:text-5xl text-gray-800 pb-3 md:pb-6">
-            Penyedia Utama Solusi Alat Laboratorium dan Alat Kesehatan
+            Distributor Resmi Gold Meter dan Densimeter Elektronik Alfa Mirage
           </h2>
           <h2 className="font-poppins text-center md:text-left text-gray-500 text-sm md:text-xl">
             PT. Anugrah Niaga Mandiri adalah perusahaan yang bergerak di bidang
-            jual beli, distribusi, dan keagenan alat-alat laboratorium. Kami
+            jual beli, distribusi, dan keagenan timbangan laboratorium. Kami
             berkomitmen menyediakan produk-produk berkualitas tinggi yang
             mendukung penelitian, pengujian, dan pengembangan di berbagai
             bidang, mulai dari pendidikan hingga industri.
