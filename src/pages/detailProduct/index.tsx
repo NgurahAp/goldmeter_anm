@@ -97,7 +97,7 @@ export const ProductDetail = () => {
                 <div className="pl-4 py-2 bg-gray-50 rounded-b-lg">
                   <ul className="space-y-1">
                     {product.modePadatFeatures.map((feature, index) => (
-                      <div key={index} className="flex items-center gap-3">
+                      <div key={index} className="flex items-start gap-3">
                         <span className="text-green-700">•</span>
                         <li className="text-gray-600 text-sm pl-1">
                           {feature}
@@ -120,7 +120,7 @@ export const ProductDetail = () => {
                 <div className="pl-4 py-2 bg-gray-50 rounded-b-lg">
                   <ul className="space-y-1">
                     {product.modeCairFeatures.map((feature, index) => (
-                      <div key={index} className="flex items-center gap-3">
+                      <div key={index} className="flex items-start gap-3">
                         <span className="text-green-700">•</span>
                         <li className="text-gray-600 text-sm pl-1">
                           {feature}
@@ -142,7 +142,7 @@ export const ProductDetail = () => {
                 <div className="pl-4 py-2 bg-gray-50 rounded-b-lg">
                   <ul className="space-y-1">
                     {product.features.map((feature, index) => (
-                      <div key={index} className="flex items-center gap-3">
+                      <div key={index} className="flex items-start gap-3">
                         <span className="text-green-700">•</span>
                         <li className="text-gray-600 text-sm pl-1">
                           {feature}

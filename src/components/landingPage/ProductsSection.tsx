@@ -18,7 +18,7 @@ const products = [
       "Alat ini dirancang untuk memberikan hasil uji logam mulia dengan akurasi tinggi.",
     image: "/detailProduct/gold-meter-gk-300.jfif",
     alt: "Alfa Mirage Gold Meter GK-300",
-    link: `/detailProduct/Elektronik%20Densimeter%20MDS-300`,
+    link: `/detailProduct/Alfa%20Mirage%20Gold%20Meter%20GK-300`,
     padding: "mt-[0.2rem]",
   },
   {
@@ -28,7 +28,7 @@ const products = [
       "Model dasar dengan penjualan terlaris, cukup mudah, dan akurat.",
     image: "/detailProduct/gold-meter-gks-300.jfif",
     alt: "Gold Meter & Precious Metal Tester",
-    link: `/detailProduct/Elektronik%20Densimeter%20MDS-3000`,
+    link: `/detailProduct/Alfa%20Mirage%20Gold%20Meter%20GKS-300`,
     padding: null,
   },
   {
