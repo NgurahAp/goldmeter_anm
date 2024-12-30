@@ -3,6 +3,36 @@ import { Link } from "react-router-dom";
 const products = [
   {
     id: 1,
+    title: "Alfa Mirage Gold Meter GKS-3000",
+    description:
+      "Dirancang khusus untuk menguji emas, platinum, perak, dan logam mulia lainnya.",
+    image: "/detailProduct/gold-meter-gks-3000.jfif",
+    alt: "Alfa Mirage Gold Meter GKS-3000",
+    link: `/detailProduct/Alfa%20Mirage%20Gold%20Meter%20GKS-3000`,
+    padding: "mt-[0.2rem]",
+  },
+  {
+    id: 2,
+    title: "Alfa Mirage Gold Meter GK-300",
+    description:
+      "Alat ini dirancang untuk memberikan hasil uji logam mulia dengan akurasi tinggi.",
+    image: "/detailProduct/gold-meter-gk-300.jfif",
+    alt: "Alfa Mirage Gold Meter GK-300",
+    link: `/detailProduct/Elektronik%20Densimeter%20MDS-300`,
+    padding: "mt-[0.2rem]",
+  },
+  {
+    id: 3,
+    title: "Alfa Mirage Gold Meter GKS-300",
+    description:
+      "Model dasar dengan penjualan terlaris, cukup mudah, dan akurat.",
+    image: "/detailProduct/gold-meter-gks-300.jfif",
+    alt: "Gold Meter & Precious Metal Tester",
+    link: `/detailProduct/Elektronik%20Densimeter%20MDS-3000`,
+    padding: null,
+  },
+  {
+    id: 4,
     title: "Alfa Mirage Densimeter MD-300S",
     description:
       "Model populer dengan resolusi 0,01g/cm yang ditingkatkan dari sebelumnya model MD-200S.",
@@ -12,7 +42,7 @@ const products = [
     padding: "mt-[1.2rem]",
   },
   {
-    id: 2,
+    id: 5,
     title: "Elektronik Densimeter MDS-300",
     description:
       "Fungsi baru pengukuran kepadatan bubuk ditambah dengan resolusi 0,001g/cm dan nilai referensi 0,0001g/cm",
@@ -22,7 +52,7 @@ const products = [
     padding: null,
   },
   {
-    id: 3,
+    id: 6,
     title: "Elektronik Densimeter MDS-3000",
     description: "MDS-3000 dapat mengukur kapasitas maksimum hingga 3kg.",
     image: "/landing/mds-3000.jpeg",
@@ -40,7 +70,7 @@ const Products = () => {
           Produk Unggulan Kami
         </p>
         <h2 className="font-extrabold text-center text-3xl md:text-5xl text-gray-800 pb-6 md:px-28">
-          Produk Terbaik untuk Kebutuhan Laboratorium dan Kesehatan
+          Produk Terbaik untuk Kebutuhan Timbangan Laboratorium
         </h2>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">

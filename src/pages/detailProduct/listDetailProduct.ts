@@ -2,8 +2,9 @@ export interface ProductDetails {
   name: string;
   description: string;
   image: string;
-  modePadatFeatures: string[];
-  modeCairFeatures: string[];
+  modePadatFeatures?: string[]; // Make optional
+  modeCairFeatures?: string[]; // Make optional
+  features?: string[]; // Add general features
   spesifikasi: string[];
 }
 
@@ -91,6 +92,31 @@ export const productsData: Record<string, ProductDetails> = {
       "Berat : 4.2kg",
       "Dimensi : (D)260 × (W)240 × (H)240mm",
       "Aksesoris : Piranti, Termometer, Sudut Baja, Adaptor AC, Muatan tambahan ke PC dengan penghubung standar RS232C",
+    ],
+  },
+  "Alfa Mirage Gold Meter GKS-3000": {
+    name: "Alfa Mirage Gold Meter GKS-3000",
+    description:
+      "Alfa Mirage GKS-3000 adalah alat penguji logam mulia berbasis pengukuran berat jenis (density) yang memungkinkan Anda mengukur kemurnian logam tanpa merusak sampel. Dengan teknologi terkini dari Jepang, alat ini mampu memberikan hasil yang cepat dan akurat, ideal untuk berbagai kebutuhan di sektor perhiasan, perdagangan logam mulia, hingga laboratorium.",
+    image: "/detailProduct/gold-meter-gks-3000.jfif",
+    features: [
+      "Akurasi pengukuran hingga ±0.01 g/cm³ untuk memastikan hasil yang dapat dipercaya.",
+      "Mampu mendeteksi logam mulia campuran dan tingkat kemurnian dengan mudah.",
+      "Tampilan yang jelas dan mudah dibaca, bahkan dalam kondisi pencahayaan rendah.",
+      "Alat dilengkapi dengan fitur kalibrasi otomatis untuk menjaga akurasi pengukuran.",
+      "Tombol intuitif dan panduan pengguna membuat alat ini mudah digunakan, bahkan untuk pemula.",
+      "Ringan dan kompak, memudahkan mobilitas untuk penggunaan di toko emas, pameran, atau di tempat kerja.",
+    ],
+    spesifikasi: [
+      "Menggunakan metode Archimedes (membandingkan massa udara dan massa dalam air).",
+      "Rentang Pengukuran : Karat emas 6k hingga 24k, kemurnian emas 25% hingga 100%, densitas 1.000–22.000 g/cm³.",
+      "Akurasi : Karat ±0.1k, Densitas: ±0.01 g/cm³.",
+      "Kapasitas Timbangan : Maksimum 300 gram, Resolusi 0.005 gram.",
+      "Material yang Didukung : Emas kuning, emas putih, platinum, perak, dan logam mulia lainnya.",
+      "Dimensi : (D) 185 x (w) 250 x (H) 175 mm.",
+      "Berat : 2.5kg",
+      "Daya : Power supply: AC 100V–240V, 50/60 Hz.",
+      "Fitur Tambahan : Mode hemat energi, Kalibrasi internal otomatis."
     ],
   },
 };

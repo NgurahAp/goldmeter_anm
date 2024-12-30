@@ -1,5 +1,3 @@
-import { Link } from "react-router-dom";
-
 const HeroSection = () => {
   return (
     <section
@@ -20,12 +18,14 @@ const HeroSection = () => {
           Distributor dan Agen Terpercaya Alat Laboratorium Berkualitas Tinggi
           di Indonesia
         </p>
-        <Link
-          to="#"
+        <a
+          href="https://wa.me/6281398387525"
+          target="_blank"
+          rel="noopener noreferrer"
           className="bg-red-500 text-white border-2 border-red-500 px-6 py-3 rounded-md text-base font-semibold"
         >
           Konsultasi Sekarang
-        </Link>
+        </a>
       </div>
       <div className="w-0 md:w-1/3 justify-end hidden md:block">
         <img
