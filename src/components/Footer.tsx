@@ -1,3 +1,6 @@
+import "leaflet/dist/leaflet.css";
+import MapComponent from "./MapFooter";
+
 const Footer = () => {
   return (
     <footer className="min-h-[60vh] bg-[#333333] py-8 md:py-14 px-4 md:px-16">
@@ -49,30 +52,31 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="md:pl-28 pt-6 md:pt-0">
+        <div className="md:pl-28 pt-6 md:pt-0 w-[28rem]">
           <h1 className="font-urbanist font-medium text-lg text-white">
             Alamat Kantor
           </h1>
-          <p className="text-slate-300 font-light py-3">
+          <p className="text-slate-300 font-light">
             Jl. Radin Inten II No. 61A Duren Sawit
           </p>
+          <MapComponent />
+        </div>
+        <div className="md:pl-20 pt-0 ">
           <h1 className="font-urbanist font-medium text-lg text-white">
             Email
           </h1>
-          <p className="text-slate-300 font-light py-3">
+          <p className="text-slate-300 font-light pb-3">
             sales@anm.co.id <br />
             anugrah.niaga.mandiri@gmail.com
           </p>
           <h1 className="font-urbanist font-medium text-lg text-white">
             Website
           </h1>
-          <p className="text-slate-300 font-light pt-3">http://www.anm.co.id</p>
-        </div>
-        <div className="md:pl-20 pt-6">
-          <h1 className="font-urbanist font-medium text-xl text-white">
+          <p className="text-slate-300 font-light pb-3">http://www.anm.co.id</p>
+          <h1 className="font-urbanist font-medium text-lg text-white">
             Media Sosial
           </h1>
-          <div className="flex space-x-3 mt-3">
+          <div className="flex space-x-3 my-3">
             <div className="group relative cursor-pointer">
               <div className="relative rounded-lg p-1.5 border border-slate-300 group-hover:border-green-700 transition-all duration-300 transform group-hover:scale-110">
                 <svg
@@ -139,7 +143,6 @@ const Footer = () => {
           <a href="https://anm.co.id" className="text-blue-500 hover:underline">
             PT. Anugrah Niaga Mandiri
           </a>
-      
         </p>
       </div>
     </footer>
