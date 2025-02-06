@@ -1,7 +1,10 @@
 const AboutUs = () => {
   return (
-    <section className="min-h-screen flex items-center" id="aboutUs">
-      <div className="flex flex-col md:flex-row gap-x-10 px-5 md:px-24">
+    <section
+      className="py-10 flex items-center justify-center max-w-7xl mx-auto"
+      id="aboutUs"
+    >
+      <div className="flex flex-col md:flex-row gap-x-10 px-5 md:px-10">
         <div className="w-full md:w-1/2 flex items-center justify-center">
           <div className="w-full relative">
             <img

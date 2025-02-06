@@ -1,6 +1,6 @@
 const Testimonial = () => {
   return (
-    <section className="min-h-screen flex flex-col-reverse md:flex-row">
+    <section className="flex flex-col-reverse md:flex-row py-10 max-w-7xl mx-auto">
       <div className="w-full md:w-[47%] flex items-end justify-center">
         <img
           src="/landing/testimonial.png"
@@ -9,9 +9,11 @@ const Testimonial = () => {
           width={497}
           height={605}
         />
-      </div>  
+      </div>
       <div className="w-full md:w-[53%] px-5 pt-12 md:pr-24">
-        <p className="text-green-700 font-bold pb-3 md:pb-6 text-lg">Testimonial</p>
+        <p className="text-green-700 font-bold pb-3 md:pb-6 text-lg">
+          Testimonial
+        </p>
         <h2 className="font-extrabold text-2xl md:text-5xl text-gray-800 pb-3 md:pb-6 font-urbanist">
           Apa Kata Pelanggan Kami
         </h2>

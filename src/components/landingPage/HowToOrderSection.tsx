@@ -1,6 +1,9 @@
 const HowToOrder = () => {
   return (
-    <section id="howToOrder" className="min-h-screen my-10 mx-5 md:mx-20">
+    <section
+      id="howToOrder"
+      className=" px-10 flex flex-col justify-center items-center max-w-7xl mx-auto"
+    >
       <div className="flex flex-col text-center font-urbanist">
         <p className="text-lg font-extrabold text-green-800 pt-14 pb-5">
           Cara Pemesanan
@@ -79,7 +82,7 @@ const HowToOrder = () => {
           </div>
         </div>
       </div>
-    </section>  
+    </section>
   );
 };
 

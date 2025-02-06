@@ -3,8 +3,8 @@ import MapComponent from "./MapFooter";
 
 const Footer = () => {
   return (
-    <footer className="min-h-[60vh] bg-[#333333] py-8 md:py-14 px-4 md:px-16">
-      <div className="flex flex-col md:flex-row">
+    <footer className=" bg-[#333333] py-8 md:py-14 px-4 md:px-16 flex flex-col items-center">
+      <div className="flex flex-col md:flex-row max-w-7xl ">
         <div>
           <img
             src="/landing/footer_logo.jpg"
@@ -52,15 +52,18 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="md:pl-28 pt-6 md:pt-0 md:w-[28rem]">
+        <div className="md:pl-28 pt-6 md:pt-0 md:w-[28rem] flex flex-col">
           <h1 className="font-urbanist font-medium text-lg text-white">
             Alamat Kantor
           </h1>
           <p className="text-slate-300 font-light">
             Jl. Radin Inten II No. 61A Duren Sawit
           </p>
-          <MapComponent />
+          <div className="pt-3 w-full h-48 overflow-hidden">
+            <MapComponent />
+          </div>
         </div>
+
         <div className="md:pl-20 pt-6 md:pt-0 ">
           <h1 className="font-urbanist font-medium text-lg text-white">
             Email

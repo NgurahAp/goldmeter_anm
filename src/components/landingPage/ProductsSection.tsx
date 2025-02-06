@@ -3,7 +3,10 @@ import { products } from "../../data/product";
 
 const Products = () => {
   return (
-    <section id="products" className="min-h-screen my-10 mx-5 md:mx-20">
+    <section
+      id="products"
+      className="py-10 my-10 flex flex-col justify-center items-center  max-w-7xl mx-auto"
+    >
       <div className="flex flex-col text-center font-urbanist">
         <p className="text-green-700 text-center md:text-base font-extrabold pb-3 md:pb-6 text-xl pt-10 md:pt-0">
           Produk Unggulan Kami
@@ -12,11 +15,11 @@ const Products = () => {
           Produk Terbaik untuk Kebutuhan Timbangan Laboratorium
         </h2>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div className="flex flex-wrap justify-center gap-6">
         {products.map((product) => (
           <div
             key={product.id}
-            className="bg-white rounded-lg hover:shadow-xl border hover:border-red-500 overflow-hidden"
+            className="bg-white rounded-lg hover:shadow-xl border w-96 hover:border-red-500 overflow-hidden"
           >
             <div className="flex justify-center">
               <img
