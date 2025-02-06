@@ -1,8 +1,8 @@
 "use client";
-
 import { ChevronDown } from "lucide-react";
 import { productsData } from "./listDetailProduct";
 import { useParams } from "react-router-dom";
+import { motion } from "framer-motion";
 
 export const ProductDetail = () => {
   const { productName } = useParams<{ productName: string }>();
@@ -21,7 +21,6 @@ export const ProductDetail = () => {
   }
 
   const decodedProductName = decodeURIComponent(productName);
-
   const validProducts = Object.keys(productsData);
 
   if (!validProducts.includes(decodedProductName)) {
@@ -39,11 +38,23 @@ export const ProductDetail = () => {
 
   const product = productsData[decodedProductName];
 
+  const fadeInVariants = {
+    hidden: { opacity: 0, y: 50 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.8 } },
+  };
+
   return (
     <section>
       <div className="px-5 md:px-10 pt-14 md:pt-32 pb-10 flex flex-col max-w-7xl mx-auto">
         <div className="flex flex-col-reverse md:flex-row gap-16">
-          <div className="w-full md:w-1/2 ">
+          {/* Left Column - Image and Specifications */}
+          <motion.div
+            variants={fadeInVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            className="w-full md:w-1/2"
+          >
             <img
               src={product.image}
               alt={product.name}
@@ -63,9 +74,17 @@ export const ProductDetail = () => {
                 <li className="text-gray-500 pl-1">{feature}</li>
               </div>
             ))}
-          </div>
-          <div className="w-full md:w-1/2 pt-10 ">
-            <div className="flex ">
+          </motion.div>
+
+          {/* Right Column - Description and Features */}
+          <motion.div
+            variants={fadeInVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            className="w-full md:w-1/2 pt-10"
+          >
+            <div className="flex">
               <img
                 src={product.image}
                 alt={product.name}
@@ -74,7 +93,6 @@ export const ProductDetail = () => {
                 className="block md:hidden pb-5"
               />
             </div>
-
             <h2 className="font-urbanist font-extrabold text-3xl md:text-5xl pr-10 text-gray-800">
               {product.name}
             </h2>
@@ -85,7 +103,6 @@ export const ProductDetail = () => {
             <h3 className="pt-8 pb-2 font-urbanist text-xl font-extrabold">
               Fungsi
             </h3>
-
             {product.modePadatFeatures && (
               <div className="mb-4">
                 <div className="w-full py-2 px-4 bg-gray-100 rounded-t-lg flex justify-between">
@@ -108,7 +125,6 @@ export const ProductDetail = () => {
                 </div>
               </div>
             )}
-
             {product.modeCairFeatures && (
               <div className="mb-4">
                 <div className="w-full py-2 px-4 bg-gray-100 rounded-t-lg flex justify-between">
@@ -131,8 +147,6 @@ export const ProductDetail = () => {
                 </div>
               </div>
             )}
-
-            {/* Render general features if they exist */}
             {product.features && (
               <div className="mb-4">
                 <div className="w-full py-2 px-4 bg-gray-100 rounded-t-lg flex justify-between">
@@ -153,15 +167,21 @@ export const ProductDetail = () => {
                 </div>
               </div>
             )}
-          </div>
+          </motion.div>
         </div>
+
         {/* Enhanced Contact Banner */}
-        <div className="w-full flex justify-center px-4">
+        <motion.div
+          variants={fadeInVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          className="w-full flex justify-center px-4"
+        >
           <div className="w-full max-w-4xl bg-gradient-to-br from-white to-gray-50 border-2 border-green-500 p-8 rounded-2xl shadow-xl mt-12 mb-8 relative overflow-hidden">
             {/* Decorative Elements */}
             <div className="absolute top-0 right-0 w-32 h-32 bg-green-500 opacity-10 rounded-full transform translate-x-16 -translate-y-16"></div>
             <div className="absolute bottom-0 left-0 w-24 h-24 bg-green-500 opacity-10 rounded-full transform -translate-x-12 translate-y-12"></div>
-
             <div className="relative z-10">
               <h2 className="text-center font-urbanist text-3xl md:text-4xl font-bold text-gray-800 mb-3">
                 Hubungi Kami
@@ -171,7 +191,6 @@ export const ProductDetail = () => {
                 Dapatkan informasi lengkap tentang produk dan penawaran khusus
                 melalui WhatsApp atau Email kami
               </p>
-
               <div className="flex flex-col md:flex-row items-stretch justify-center gap-4 md:gap-6">
                 <a
                   href="https://wa.me/6281617408900"
@@ -195,7 +214,6 @@ export const ProductDetail = () => {
                   </svg>
                   <span className="font-medium">0816-1740-8900</span>
                 </a>
-
                 <a
                   href="mailto:sales@anm.co.id"
                   className="flex items-center px-8 py-4 justify-center bg-white border-2 border-green-500 rounded-xl text-green-600 hover:bg-green-500 hover:text-white transition-all duration-300 shadow-md hover:shadow-lg group"
@@ -219,7 +237,7 @@ export const ProductDetail = () => {
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );
