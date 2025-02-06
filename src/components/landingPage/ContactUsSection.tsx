@@ -62,7 +62,7 @@ export const ContactUs = () => {
   return (
     <section
       id="contactUs"
-      className="bg-gradient-to-b from-gray-50 to-gray-100 pb-16"
+      className="bg-gradient-to-b from-gray-50 pt-10 to-gray-100 pb-16"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div

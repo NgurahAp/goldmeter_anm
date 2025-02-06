@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 const Testimonial = () => {
   return (
     <motion.section
-      className="flex flex-col-reverse md:flex-row py-10 max-w-7xl mx-auto"
+      className="flex flex-col-reverse md:flex-row pt-10 max-w-7xl mx-auto"
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8 }}
@@ -25,7 +25,7 @@ const Testimonial = () => {
         />
       </motion.div>
       <motion.div
-        className="w-full md:w-[53%] px-5 pt-12 md:pr-24"
+        className="w-full md:w-[53%] px-5 pt-12 md:pr-24 py-10"
         initial={{ opacity: 0, x: 50 }}
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.8, delay: 0.4 }}

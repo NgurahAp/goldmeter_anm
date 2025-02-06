@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import { CheckCircle } from "lucide-react";
 
 const HeroSection = () => {
   return (
@@ -13,20 +12,8 @@ const HeroSection = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
       >
-        {/* Badge */}
-        <motion.div
-          className="inline-flex items-center gap-2 bg-green-50 px-4 py-2 rounded-full"
-          initial={{ scale: 0.8, opacity: 0 }}
-          animate={{ scale: 1, opacity: 1 }}
-          transition={{ duration: 0.5, delay: 0.2 }}
-        >
-          <CheckCircle className="w-4 h-4 text-green-600" />
-          <span className="text-sm font-medium text-green-700">
-            Official Distributor
-          </span>
-        </motion.div>
         <motion.h2
-          className="text-xl md:text-2xl font-semibold text-gray-800 pt-5"
+          className="text-xl md:text-3xl font-semibold text-gray-800 pt-5"
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
@@ -46,7 +33,7 @@ const HeroSection = () => {
             animate={{ scale: 1, opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.8 }}
           >
-            Metal Tester Laboratorium
+            Gold Meter
           </motion.span>
         </motion.h1>
         <motion.p
