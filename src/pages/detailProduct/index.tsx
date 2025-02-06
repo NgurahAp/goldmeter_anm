@@ -41,9 +41,9 @@ export const ProductDetail = () => {
 
   return (
     <section>
-      <div className="min-h-screen px-5 md:px-10 pt-14 md:pt-32 pb-10">
-        <div className="flex flex-col-reverse md:flex-row">
-          <div className="w-full md:w-1/2 md:pl-20">
+      <div className="px-5 md:px-10 pt-14 md:pt-32 pb-10 flex flex-col max-w-7xl mx-auto">
+        <div className="flex flex-col-reverse md:flex-row gap-16">
+          <div className="w-full md:w-1/2 ">
             <img
               src={product.image}
               alt={product.name}
@@ -64,7 +64,7 @@ export const ProductDetail = () => {
               </div>
             ))}
           </div>
-          <div className="w-full md:w-1/2 pt-10 md:px-5">
+          <div className="w-full md:w-1/2 pt-10 ">
             <div className="flex ">
               <img
                 src={product.image}
