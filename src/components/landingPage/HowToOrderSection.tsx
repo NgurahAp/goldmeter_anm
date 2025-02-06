@@ -1,29 +1,49 @@
+import { motion } from "framer-motion";
+
 const HowToOrder = () => {
   return (
     <section
       id="howToOrder"
-      className=" px-10 flex flex-col justify-center items-center max-w-7xl mx-auto"
+      className="px-10 flex flex-col justify-center items-center max-w-7xl mx-auto"
     >
       <div className="flex flex-col text-center font-urbanist">
-        <p className="text-lg font-extrabold text-green-800 pt-14 pb-5">
+        <motion.p
+          className="text-lg font-extrabold text-green-800 pt-14 pb-5"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 1 }}
+        >
           Cara Pemesanan
-        </p>
-        <h2 className="text-3xl md:text-5xl font-extrabold text-gray-800 pb-10 md:pb-14">
+        </motion.p>
+        <motion.h2
+          className="text-3xl md:text-5xl font-extrabold text-gray-800 pb-10 md:pb-14"
+          initial={{ opacity: 0, y: -50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
+        >
           Langkah Mudah untuk Pemesanan
-        </h2>
+        </motion.h2>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-y-8 font-urbanist">
-        <div className="bg-white rounded-lg   overflow-hidden">
+        <motion.div
+          className="bg-white rounded-lg overflow-hidden"
+          initial={{ opacity: 0, x: -100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8 }}
+        >
           <h2 className="text-center text-2xl font-bold text-gray-700 pb-5 md:pb-14">
             Step 1
           </h2>
           <div className="flex justify-center">
-            <img
+            <motion.img
               src="/landing/konsultasi_product.png"
               alt="Gold Meter & Precious Metal Tester"
-              className=" "
+              className=""
               width={285}
               height={194}
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ duration: 1 }}
             />
           </div>
           <div className="p-3 flex flex-col items-center font-poppins">
@@ -35,18 +55,26 @@ const HowToOrder = () => {
               laboratorium anda.
             </p>
           </div>
-        </div>
-        <div className="bg-white rounded-lg   overflow-hidden">
+        </motion.div>
+        <motion.div
+          className="bg-white rounded-lg overflow-hidden"
+          initial={{ opacity: 0, x: 100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8 }}
+        >
           <h2 className="text-center text-2xl font-bold text-gray-700 pb-5 md:pb-14">
             Step 2
           </h2>
           <div className="flex justify-center">
-            <img
+            <motion.img
               src="/landing/penawaran_harga.png"
               alt="Gold Meter & Precious Metal Tester"
-              className=" "
+              className=""
               width={285}
               height={194}
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ duration: 1 }}
             />
           </div>
           <div className="p-3 flex flex-col items-center font-poppins">
@@ -57,18 +85,26 @@ const HowToOrder = () => {
               Dapatkan penawaran harga terbaik untuk produk pilihan anda.
             </p>
           </div>
-        </div>
-        <div className="bg-white rounded-lg   overflow-hidden">
+        </motion.div>
+        <motion.div
+          className="bg-white rounded-lg overflow-hidden"
+          initial={{ opacity: 0, x: -100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8 }}
+        >
           <h2 className="text-center text-2xl font-bold text-gray-700 pb-5 md:pb-14">
             Step 3
           </h2>
           <div className="flex justify-center">
-            <img
+            <motion.img
               src="/landing/proses_pengiriman.png"
               alt="Gold Meter & Precious Metal Tester"
-              className=" "
+              className=""
               width={285}
               height={194}
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ duration: 1 }}
             />
           </div>
           <div className="p-3 flex flex-col items-center font-poppins">
@@ -80,7 +116,7 @@ const HowToOrder = () => {
               Indonesia.
             </p>
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

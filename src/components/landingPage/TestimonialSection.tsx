@@ -1,7 +1,21 @@
+import { motion } from "framer-motion";
+
 const Testimonial = () => {
   return (
-    <section className="flex flex-col-reverse md:flex-row py-10 max-w-7xl mx-auto">
-      <div className="w-full md:w-[47%] flex items-end justify-center">
+    <motion.section
+      className="flex flex-col-reverse md:flex-row py-10 max-w-7xl mx-auto"
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8 }}
+      viewport={{ once: true }}
+    >
+      <motion.div
+        className="w-full md:w-[47%] flex items-end justify-center"
+        initial={{ opacity: 0, x: -50 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.8, delay: 0.2 }}
+        viewport={{ once: true }}
+      >
         <img
           src="/landing/testimonial.png"
           alt="Gold Meter & Precious Metal Tester"
@@ -9,8 +23,14 @@ const Testimonial = () => {
           width={497}
           height={605}
         />
-      </div>
-      <div className="w-full md:w-[53%] px-5 pt-12 md:pr-24">
+      </motion.div>
+      <motion.div
+        className="w-full md:w-[53%] px-5 pt-12 md:pr-24"
+        initial={{ opacity: 0, x: 50 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.8, delay: 0.4 }}
+        viewport={{ once: true }}
+      >
         <p className="text-green-700 font-bold pb-3 md:pb-6 text-lg">
           Testimonial
         </p>
@@ -21,7 +41,13 @@ const Testimonial = () => {
           Dengarkan langsung dari pelanggan kami tentang pengalaman mereka
           menggunakan produk dan layanan PT Anugrah Niaga Mandiri.
         </h2>
-        <div className="bg-gray-100 min-h-72 rounded-2xl text-center md:p-6 flex flex-col items-center justify-center">
+        <motion.div
+          className="bg-gray-100 min-h-72 rounded-2xl text-center md:p-6 flex flex-col items-center justify-center"
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.6 }}
+          viewport={{ once: true }}
+        >
           <h2 className="text-2xl font-semibold text-gray-800 mb-0">
             Dr. Andi S.
           </h2>
@@ -87,9 +113,9 @@ const Testimonial = () => {
             beberapa tahun dan selalu puas dengan kualitas alat dan layanan
             mereka.
           </p>
-        </div>
-      </div>
-    </section>
+        </motion.div>
+      </motion.div>
+    </motion.section>
   );
 };
 
