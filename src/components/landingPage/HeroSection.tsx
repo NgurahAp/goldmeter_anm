@@ -1,22 +1,31 @@
+import { CheckCircle } from "lucide-react";
+
 const HeroSection = () => {
   return (
     <section
       id="home"
-      className="bg-white min-h-[86vh] px-3 md:px-20 flex items-center relative"
+      className="bg-white py-20 px-3 md:px-10 flex items-center relative justify-center max-w-7xl mx-auto"
     >
       <div className="w-full md:w-2/3 font-urbanist">
-        <h2 className="text-xl md:text-2xl font-semibold text-gray-800">
+        {/* Badge */}
+        <div className="inline-flex items-center gap-2 bg-green-50 px-4 py-2 rounded-full">
+          <CheckCircle className="w-4 h-4 text-green-600" />
+          <span className="text-sm font-medium text-green-700">
+            Official Distributor
+          </span>
+        </div>
+        <h2 className="text-xl md:text-2xl font-semibold text-gray-800 pt-5">
           PT. Anugrah Niaga Mandiri
         </h2>
         <h1 className="py-6 text-5xl md:text-5xl font-extrabold text-gray-900">
           Solusi Lengkap untuk Kebutuhan <br />
           <span className="text-3xl md:text-6xl font-extrabold text-green-700">
-            Timbangan Laboratorium
+            Metal Tester Laboratorium
           </span>
         </h1>
         <p className="font-poppins text-base md:text-lg text-gray-700 italic pb-10">
-          Distributor dan Agen Terpercaya Timbangan Laboratorium Berkualitas Tinggi
-          di Indonesia
+          Distributor dan Agen Terpercaya Timbangan Laboratorium Berkualitas
+          Tinggi di Indonesia
         </p>
         <a
           href="https://wa.me/6281398387525"
