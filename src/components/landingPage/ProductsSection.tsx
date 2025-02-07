@@ -10,7 +10,7 @@ const Products = () => {
     >
       <div className="flex flex-col text-center font-urbanist">
         <motion.p
-          className="text-green-700 text-center md:text-base font-extrabold pb-3 md:pb-6 text-xl pt-10 md:pt-0"
+          className="text-green-700 text-center md:text-base font-extrabold pb-3 md:pb-3 text-xl pt-10 md:pt-0"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 1 }}
@@ -18,12 +18,12 @@ const Products = () => {
           Produk Unggulan Kami
         </motion.p>
         <motion.h2
-          className="font-extrabold text-center text-3xl md:text-5xl text-gray-800 pb-6 md:px-28"
+          className="font-extrabold text-center text-3xl md:text-5xl text-gray-800 pb-10 md:px-28"
           initial={{ opacity: 0, y: -50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
         >
-          Produk Terbaik untuk Kebutuhan Timbangan Laboratorium
+          Produk Terbaik untuk Kebutuhan Gold Meter
         </motion.h2>
       </div>
       <div className="flex flex-wrap justify-center gap-6">

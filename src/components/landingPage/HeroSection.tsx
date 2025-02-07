@@ -13,7 +13,7 @@ const HeroSection = () => {
         transition={{ duration: 0.8, ease: "easeOut" }}
       >
         <motion.h2
-          className="text-xl md:text-3xl font-semibold text-gray-800 pt-5"
+          className="text-xl md:text-5xl font-semibold text-gray-800 pt-5"
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
@@ -25,7 +25,7 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6 }}
-        >
+        > 
           Solusi Lengkap untuk Kebutuhan <br />
           <motion.span
             className="text-3xl md:text-6xl font-extrabold text-green-700"
@@ -42,7 +42,7 @@ const HeroSection = () => {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, delay: 1 }}
         >
-          Distributor dan Agen Terpercaya Timbangan Laboratorium Berkualitas
+          Distributor dan Agen Terpercaya Gold Meter Berkualitas
           Tinggi di Indonesia
         </motion.p>
         <motion.a

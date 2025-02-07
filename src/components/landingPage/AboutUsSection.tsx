@@ -78,7 +78,7 @@ const AboutUs = () => {
             Tentang Kami
           </p>
           <h2 className="font-extrabold text-center md:text-left text-3xl md:text-5xl text-gray-800 pb-3 md:pb-6">
-            Distributor Resmi Gold Meter dan Densimeter Elektronik Alfa Mirage
+            Distributor Resmi Gold Meter Alfa Mirage
           </h2>
           <h2 className="font-poppins text-center md:text-left text-gray-500 text-sm md:text-xl">
             PT. Anugrah Niaga Mandiri adalah perusahaan yang bergerak di bidang
