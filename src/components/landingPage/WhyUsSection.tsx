@@ -36,26 +36,27 @@ const WhyUs = () => {
       <div className="flex flex-col-reverse md:flex-row gap-x-6 px-5 md:px-10">
         {/* Left Column - Content */}
         <motion.div
-          className="w-full md:w-1/2 font-urbanist"
+          className="w-full md:w-1/2 font-urbanist flex flex-col justify-center"
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.1 }}
         >
           <motion.p
-            className="text-green-700 text-xl font-extrabold pb-6 md:pt-0 pt-10"
+            className="text-green-700 text-xl font-extrabold pb-5 md:pt-0 pt-10"
             variants={itemVariants}
           >
             Mengapa Memilih Kami
           </motion.p>
           <motion.h2
-            className="text-2xl md:text-5xl font-extrabold text-gray-800 pb-6"
+            className="text-2xl md:text-3xl  font-extrabold text-gray-800 pb-6"
             variants={itemVariants}
           >
-            Penyedia Gold Meter dan Densimeter Elektronik Terbaik
+            PT Anugrah Niaga Mandiri – Solusi Terbaik untuk Pengujian Logam
+            Mulia!
           </motion.h2>
           <div className="flex space-x-4">
-            <div className="flex flex-col items-center pt-8 md:pt-9">
+            <div className="flex flex-col items-center pt-8 md:pt-0">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -70,7 +71,7 @@ const WhyUs = () => {
                   d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
                 />
               </svg>
-              <div className="w-0.5 h-32 md:h-20 bg-red-500 "></div>
+              <div className="w-0.5 h-32 md:h-32 bg-red-500 "></div>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -85,22 +86,7 @@ const WhyUs = () => {
                   d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
                 />
               </svg>
-              <div className="w-0.5 h-28 md:h-20 bg-red-500 "></div>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth="1.5"
-                stroke="currentColor"
-                className="size-8 md:size-10 text-red-500"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
-                />
-              </svg>
-              <div className="w-0.5 h-20 md:h-20 bg-red-500 "></div>
+              <div className="w-0.5 h-28 md:h-24 bg-red-500 "></div>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -122,34 +108,28 @@ const WhyUs = () => {
                   Produk Berkualitas Tinggi
                 </h4>
                 <p className="mt-1 text-base md:text-lg text-gray-500 font-medium">
-                  Kami menyediakan berbagai alat laboratorium dengan merek-merek
-                  ternama seperti Memmert, Binder, dan Alfa Mirage
+                  Kami menyediakan Precious Metal Tester dari merek ternama
+                  seperti Alfa Mirage, yang dikenal dengan keakuratan dan daya
+                  tahannya.
                 </p>
               </div>
               <div className="pt-6">
                 <h4 className="text-xl md:text-2xl text-gray-800 font-bold">
-                  Harga Kompetitif
+                  Garansi Resmi & Layanan Purna Jual
                 </h4>
                 <p className="mt-1 text-base md:text-lg text-gray-500 font-medium">
-                  Menawarkan solusi alat laboratorium dengan harga yang
-                  terjangkau dan nilai terbaik.
+                  Kami memastikan setiap produk bergaransi serta didukung oleh
+                  layanan after-sales yang responsif.
                 </p>
               </div>
               <div className="pt-6">
                 <h4 className="text-xl md:text-2xl text-gray-800 font-bold">
-                  Layanan Purna Jual Terpercaya
+                  Akurasi & Keandalan Terjamin
                 </h4>
                 <p className="mt-1 text-base md:text-lg text-gray-500 font-medium">
-                  Didukung dengan garansi dan layanan purna jual yang memuaskan.
-                </p>
-              </div>
-              <div className="pt-6">
-                <h4 className="text-xl md:text-2xl text-gray-800 font-bold">
-                  Pengiriman Cepat dan Aman
-                </h4>
-                <p className="mt-1 text-base md:text-lg text-gray-500 font-medium">
-                  Produk dikirim dengan standar pengemasan terbaik agar tiba
-                  dengan aman dan cepat di lokasi Anda.
+                  Alat yang kami jual memiliki presisi tinggi dalam mengukur
+                  kadar emas, perak, dan logam mulia lainnya, sehingga Anda
+                  dapat berbisnis dengan lebih percaya diri.
                 </p>
               </div>
             </div>
@@ -166,7 +146,7 @@ const WhyUs = () => {
         >
           <div className="w-11/12 md:w-full relative">
             <motion.img
-              src="/landing/why_us.jpg"
+              src="/landing/hero.jfif"
               alt="Logo"
               className="object-contain w-full rounded-lg shadow-lg"
               variants={imageVariants}

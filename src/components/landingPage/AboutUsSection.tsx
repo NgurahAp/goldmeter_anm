@@ -1,112 +1,78 @@
 import { motion } from "framer-motion";
-import { useEffect, useRef, useState } from "react";
 
 const AboutUs = () => {
-  const [experience, setExperience] = useState(0);
-  const [products, setProducts] = useState(0);
-  const sectionRef = useRef(null); // Ref untuk memantau section
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        const entry = entries[0];
-        if (entry.isIntersecting) {
-          // Jalankan interval hanya ketika section terlihat
-          const experienceInterval = setInterval(() => {
-            setExperience((prev) => (prev < 20 ? prev + 1 : 20));
-          }, 50);
-
-          const productsInterval = setInterval(() => {
-            setProducts((prev) => (prev < 67 ? prev + 1 : 67));
-          }, 30);
-
-          // Hentikan observer setelah interval dimulai
-          observer.disconnect();
-
-          // Bersihkan interval saat komponen unmount
-          return () => {
-            clearInterval(experienceInterval);
-            clearInterval(productsInterval);
-          };
-        }
-      },
-      { threshold: 0.8 } // Section dianggap terlihat ketika 50% masuk ke layar
-    );
-
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current); // Mulai memantau section
-    }
-
-    // Bersihkan observer saat komponen unmount
-    return () => {
-      if (sectionRef.current) {
-        observer.unobserve(sectionRef.current);
-      }
-    };
-  }, []);
-
   return (
     <section
-      className="py-10 flex items-center justify-center max-w-7xl mx-auto"
+      className="py-16 flex items-center justify-center max-w-7xl mx-auto"
       id="aboutUs"
-      ref={sectionRef}
     >
-      <div className="flex flex-col md:flex-row gap-x-10 px-5 md:px-10">
+      <div className="flex flex-col md:flex-row gap-x-12 px-6 md:px-12">
+        {/* Image Section */}
         <motion.div
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 0.6 }}
           viewport={{ once: true }}
           className="w-full md:w-1/2 flex items-center justify-center"
         >
           <div className="w-full relative">
             <img
-              className="w-full object-contain"
+              className="w-full object-cover rounded-xl shadow-2xl"
               src="/landing/about_us.jpg"
-              alt="Penyedia Utama Solusi Alat Laboratorium dan Alat Kesehatan"
+              alt="PT Anugrah Niaga Mandiri - Distributor Resmi Gold Meter Alfa Mirage"
             />
           </div>
         </motion.div>
+
+        {/* Text Section */}
         <motion.div
           initial={{ opacity: 0, x: 50 }}
           whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 0.6 }}
           viewport={{ once: true }}
           className="w-full md:w-1/2 font-urbanist"
         >
-          <p className="text-green-700 text-center md:text-base md:text-left font-extrabold pb-3 md:pb-6 text-xl pt-10 md:pt-0">
+          <p className="text-green-700 text-center md:text-left font-bold text-lg md:text-xl pb-4">
             Tentang Kami
           </p>
-          <h2 className="font-extrabold text-center md:text-left text-3xl md:text-5xl text-gray-800 pb-3 md:pb-6">
+          <h2 className="font-extrabold text-center md:text-left text-3xl md:text-5xl text-gray-900 leading-tight pb-6">
             Distributor Resmi Gold Meter Alfa Mirage
           </h2>
-          <h2 className="font-poppins text-center md:text-left text-gray-500 text-sm md:text-xl">
-            PT. Anugrah Niaga Mandiri adalah perusahaan yang bergerak di bidang
-            jual beli, distribusi, dan keagenan timbangan laboratorium. Kami
-            berkomitmen menyediakan produk-produk berkualitas tinggi yang
-            mendukung penelitian, pengujian, dan pengembangan di berbagai
-            bidang, mulai dari pendidikan hingga industri.
-          </h2>
-          <div className="flex items-center justify-center pt-8 md:pt-14">
-            <div className="flex items-center text-center">
-              <div className="px-6 md:px-16">
-                <p className="text-3xl md:text-5xl text-gray-800">
-                  {experience}+
-                </p>
-                <p className="text-red-500 text-base md:text-lg font-semibold md:mt-2">
-                  Tahun Pengalaman
-                </p>
-              </div>
-              <div className="h-16 border-l-2 border-gray-300"></div>
-              <div className="px-6 md:px-16">
-                <p className="text-3xl md:text-5xl text-gray-800">
-                  {products}+
-                </p>
-                <p className="text-red-500 text-base md:text-lg font-semibold md:mt-2">
-                  Produk Terbaik
-                </p>
-              </div>
-            </div>
+          <p className="font-poppins text-center md:text-left text-gray-700 text-base md:text-lg leading-relaxed mb-4">
+            PT Anugrah Niaga Mandiri adalah distributor terpercaya yang
+            menyediakan berbagai alat laboratorium berkualitas tinggi, termasuk
+            Timbangan Gold Meter merek Alfa Mirage.
+          </p>
+          <p className="font-poppins text-center md:text-left text-gray-700 text-base md:text-lg leading-relaxed mb-6">
+            Sebagai distributor resmi Alfa Mirage, kami menyediakan produk
+            unggulan seperti Gold Meter GK-300 dan GKS 3000 Precious Metal
+            Tester, yang dirancang untuk memastikan analisis logam mulia dengan
+            cepat, akurat, dan efisien.
+          </p>
+
+          {/* Highlighted Section */}
+          <div className="bg-green-100 p-6 rounded-lg shadow-lg">
+            <h3 className="font-bold text-green-800 mb-3 text-xl">
+              Keunggulan Produk Kami:
+            </h3>
+            <ul className="space-y-3 text-gray-800">
+              <li className="flex items-center">
+                <span className="text-green-600 mr-2">✓</span>
+                Akurasi tinggi dalam pengukuran kadar emas dan logam mulia
+              </li>
+              <li className="flex items-center">
+                <span className="text-green-600 mr-2">✓</span>
+                Teknologi canggih untuk hasil yang cepat dan presisi
+              </li>
+              <li className="flex items-center">
+                <span className="text-green-600 mr-2">✓</span>
+                Garansi resmi dan layanan purna jual terpercaya
+              </li>
+              <li className="flex items-center">
+                <span className="text-green-600 mr-2">✓</span>
+                Harga kompetitif dengan kualitas terbaik
+              </li>
+            </ul>
           </div>
         </motion.div>
       </div>

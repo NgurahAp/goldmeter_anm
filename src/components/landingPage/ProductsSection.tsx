@@ -10,7 +10,7 @@ const Products = () => {
     >
       <div className="flex flex-col text-center font-urbanist">
         <motion.p
-          className="text-green-700 text-center md:text-base font-extrabold pb-3 md:pb-3 text-xl pt-10 md:pt-0"
+          className="text-green-700 text-center md:text-2xl font-extrabold pb-3 md:pb-3 text-xl pt-10 md:pt-0"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 1 }}
